@@ -4,48 +4,45 @@ import React from "react";
 function MainComponent() {
   return (
     <div className="font-sans">
-      {/* Header */}
-      <header className="bg-white shadow-md fixed w-full z-10">
-        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-          <div className="text-2xl font-bold">Logo</div>
-          <nav>
-            <ul className="flex space-x-4">
-              <li>
-                <a href="#hero" className="hover:text-blue-600">
-                  ホーム
-                </a>
-              </li>
-              <li>
-                <a href="#problem" className="hover:text-blue-600">
-                  問題
-                </a>
-              </li>
-              <li>
-                <a href="#solution" className="hover:text-blue-600">
-                  解決策
-                </a>
-              </li>
-              <li>
-                <a href="#service" className="hover:text-blue-600">
-                  サービス
-                </a>
-              </li>
-              <li>
-                <a href="#success" className="hover:text-blue-600">
-                  成功事例
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-blue-600">
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+    {/* Header */}
+    <header className="bg-white shadow-md fixed w-full z-10">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div className="text-2xl font-bold">Zero.</div>
+        <nav>
+          <ul className="flex space-x-4">
+            <li>
+              <a href="#hero" className="hover:text-blue-600">
+                ホーム
+              </a>
+            </li>
+            <li>
+              <a href="#service" className="hover:text-blue-600">
+                サービス
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-blue-600">
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
       {/* Hero Section */}
+      <section id="hero" className="relative w-full h-screen">
+        <img
+          src="path/to/your/image.jpg"
+          alt="Hero Image"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <h1 className="text-6xl font-bold text-white">Zero.</h1>
+        </div>
+      </section>
+
       <section id="hero" className="bg-gray-100 pt-20">
         <div className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
