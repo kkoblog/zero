@@ -73,7 +73,7 @@ function MainComponent() {
     <h2 className="text-3xl font-bold mb-8 text-center">
       こんな悩みはありませんか？
     </h2>
-    <div className="space-y-4 max-w-2xl mx-auto">
+    <div className="space-y-6 max-w-2xl mx-auto">
       {[
         "求人がこない・・きてもすぐに辞めちゃう・・",
         "せっかく新規が来ても、リピート率が低い・・",
@@ -83,14 +83,19 @@ function MainComponent() {
         "クローズドな安全な場所で仲間と繋がりたい",
         "美容師以外の収入の柱を持っておきたい"
       ].map((problem, index) => (
-        <div key={index} className="flex items-start space-x-3">
+        <div key={index} className="flex items-start space-x-4">
           <img 
             src="/image/speakers/aikon.jpg" 
             alt={`アイコン${index + 1}`} 
-            className="w-10 h-10 rounded-full flex-shrink-0"
+            className="w-12 h-12 rounded-full flex-shrink-0 mt-1"
           />
-          <div className="bg-gray-200 p-3 rounded-lg rounded-tl-none flex-1">
-            <p className="text-sm">{problem}</p>
+          <div className="flex-grow">
+            <div className="bg-gray-200 p-4 rounded-2xl relative">
+              <div className="absolute left-0 top-4 transform -translate-x-2 w-0 h-0 
+                              border-t-8 border-r-8 border-b-8 
+                              border-transparent border-r-gray-200"></div>
+              <p className="text-sm">{problem}</p>
+            </div>
           </div>
         </div>
       ))}
