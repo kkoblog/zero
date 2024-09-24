@@ -42,18 +42,24 @@ function MainComponent() {
     <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-50"></div>
   </div>
 
-<div className="relative z-10 flex items-center justify-end h-full container mx-auto px-4">
-  <div className="text-right max-w-2xl">
+  <div className="relative z-10 flex items-center justify-end h-full container mx-auto px-4">
+  <div className="text-right md:text-center max-w-2xl md:max-w-4xl md:mx-auto">
     <h1 className="text-6xl font-bold text-white mb-4" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em' }}>Zero.</h1>
     <div className="space-y-2">
-  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-    高めた『技術』 届けないと意味ないよね。
-  </h2>
-  <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-    『届ける』を学ぶ美容師向け無料オンラインサロン
-  </p>
-  </div>
-<button className="text-white px-8 py-3 rounded-full text-xl transition duration-300 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 mt-5">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+        高めた『技術』
+      </h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+        届けないと意味ないよね。
+      </h2>
+      <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+        『届ける』を学ぶ
+      </p>
+      <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+        美容師向け無料オンラインサロン
+      </p>
+    </div>
+    <button className="text-white px-8 py-3 rounded-full text-xl transition duration-300 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 mt-5">
       今すぐ参加する
     </button>
   </div>
