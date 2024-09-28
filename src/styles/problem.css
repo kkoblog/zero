@@ -1,0 +1,130 @@
+.problem-container {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.problem-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.problem-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid #64748b; /* スレートグレー：落ち着いた印象を与える */
+  padding: 0.25rem;
+  background-color: white;
+  position: absolute;
+  top: -1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.problem-bubble {
+  background-color: #f1f5f9; /* より柔らかい背景色 */
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.problem-bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.problem-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #334155; /* より深みのあるテキスト色 */
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .problem-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .problem-icon {
+    position: static;
+    transform: none;
+    margin-right: -1.75rem;
+    z-index: 10;
+  }
+
+  .problem-bubble {
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    text-align: left;
+  }
+
+  .problem-text {
+    text-align: left;
+  }
+}
+
+/* メディアクエリを完全に削除 */
+
+#marketing-definition {
+    background-image: linear-gradient(to right, #1f2937, #111827);
+  }
+  
+  #marketing-definition h3 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+  }
+  
+  #marketing-definition h3:hover {
+    transform: scale(1.05);
+  }
+
+  .text-gold {
+    color: #FFD700;
+  }
+  
+  .bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+  
+  .shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .transform {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.header-animation {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.menu-item-animation {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-item-animation:hover {
+  transform: scale(1.05);
+  color: #FFD700;
+}
