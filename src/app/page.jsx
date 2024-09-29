@@ -25,7 +25,7 @@ function MainComponent() {
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-60"></div>
         </div>
 
-        <div className="relative z-10 flex items-start md:items-center justify-end md:justify-center h-full container mx-auto px-4 pt-20 md:pt-0">
+        <div className="relative z-10 flex items-start md:items-center justify-end md:justify-center h-full container mx-auto px-4 pt-32 md:pt-0">
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -453,7 +453,7 @@ function MainComponent() {
               <h3 className="text-xl font-bold mb-2">参加費用について</h3>
               <p className="p-4 flex flex-col">
                 <span>美容師免許保持者（＆美容学生）：無料</span>
-                <span>その他���1500円／月額
+                <span>その他：1500円／月額
                 </span>
               </p>
             </div>
