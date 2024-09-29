@@ -157,7 +157,7 @@ function MainComponent() {
                 {[
                   {
                     title: "求人コストの削減",
-                    description: "インスタグラムを活用した無料求人で、コストを大幅に削減し���す。",
+                    description: "インスタグラムを活用した無料求人で、コストを大幅に削減します。",
                     icon: "👤"
                   },
                   {
@@ -267,7 +267,7 @@ function MainComponent() {
                 5. サロン別カスタム研修（ご要望により提案します）
                 </h3>
             
-                <p className="p-4 text-left">・例：3時間25万円～　店トークスタッフ研修　等</p>
+                <p className="p-4 text-left">・例：3時間25万円～　店販トークスタッフ研修　等</p>
               </div>
             </div>
           </div>
