@@ -12,17 +12,6 @@ function MainComponent() {
       <header className="bg-gray-900 bg-opacity-90 fixed w-full z-[1000] shadow-lg header-animation">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="text-3xl font-bold text-white font-serif" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em' }}>Zero.</div>
-          <nav>
-            <ul className="flex space-x-6">
-              {["ホーム", "サービス", "お問い合わせ"].map((item, index) => (
-                <li key={index} className={index !== 2 ? "border-r border-gold pr-6 menu-item-animation" : "menu-item-animation"}>
-                  <a href={`#${item === "ホーム" ? "hero" : item === "サービス" ? "service" : "contact"}`} className="hover:text-gold text-white transition duration-300">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
         </div>
       </header>
 
@@ -150,7 +139,7 @@ function MainComponent() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-2xl font-bold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600"
               >
                 <span className="block mb-2">マーケティングを活用すると</span>
                 <span className="block">こんな世界観に突入します</span>
@@ -190,7 +179,7 @@ function MainComponent() {
                   >
                     <div className="flex items-center mb-4">
                       <div className="text-4xl mr-4 text-gold">{item.icon}</div>
-                      <h4 className="text-2xl font-bold text-white">{item.title}</h4>
+                      <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-white">{item.title}</h4>
                     </div>
                     <p className="text-gray-300 text-left">
                       {item.description}
@@ -228,22 +217,15 @@ function MainComponent() {
 </div>
               </div>
             </div>
-
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
                 <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
-                  2. 地域別オフライン研修＆交流会
+                  2. 属性別zoom勉強会
                 </h3>
-                <h4 className="font-bold mb-2 text-left">＜目安＞</h4>
                 <div className="flex justify-start">
                   <div className="flex flex-col text-left">
-                    <span>・不定期開催</span>
-                    <span>・サロン生による企画</span>
-                    <span>・参加費目安: 外部50,000円、サロン生5,500円（3時間）</span>
-                    <span>・最低開催人数: 20名以上から。</span>
-                    <span>・属性別zoom勉強会</span>
-                    <span>▶︎月に1回の属性別zoom強会</span>
-                    <span>例）オーナー回求人のマーケティングや社内教育のテーマ</span>
+                    <span>月に1回の属性別zoom強会</span>
+                    <span>例）オーナー回：求人のマーケティングや社内教育のテーマ</span>
                     <span>アシスタント回：アシスタントで売上を上げる方法　など</span>
                   </div>
                 </div>
@@ -253,7 +235,26 @@ function MainComponent() {
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
                 <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
-                  3. 年1回のビッグイベント
+                  3. 地域別オフライン研修＆交流会
+                </h3>
+                <h4 className="font-bold mb-2 text-left">＜目安＞</h4>
+                <div className="flex justify-start">
+                  <div className="flex flex-col text-left">
+                    <span>・不定期開催</span>
+                    <span>・サロン生による企画</span>
+                    <span>・参加費目安: 外部50,000円、サロン生5,500円（3時間）</span>
+                    <span>・最低開催人数: 20名以上から。</span>
+                    <span>・属性別zoom勉強会</span>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
+              <div className="bg-gray-200 p-6">
+                <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
+                  4. 年1回のビッグイベント
                 </h3>
                 <p className="p-4 text-left">・サロン生による企画運営</p>
               </div>
@@ -262,9 +263,9 @@ function MainComponent() {
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
                 <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
-                  4. サロン別カスタム研修（ご要望により提案します）
+                  5. サロン別カスタム研修（ご要望により提案します）
                 </h3>
-                <p className="p-4 text-left">・例：3時間25万円～　店販トークスタッフ研修　等</p>
+                <p className="p-4 text-left">・例：3時間25万円～　店トークスタッフ研修　等</p>
               </div>
             </div>
           </div>
@@ -315,7 +316,7 @@ function MainComponent() {
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="flex flex-col md:flex-row relative h-auto md:h-96 bg-cover bg-center" style={{ backgroundImage: "url('/image/speakers/haikei.png')" }}>
                 <div className="w-full md:w-1/3 bg-white bg-opacity-75 p-4 md:p-8 flex flex-col justify-center items-center">
-                  <h3 className="text-4xl md:text-6xl font-bold mb-2 md:mb-4 text-black text-center">えり</h3>
+                  <h3 className="text-4xl md:text-6xl font-bold mb-2 md:mb-4 text-black text-center">エリ</h3>
                   <div className="mb-4 md:mb-8">
                     <p className="text-xl md:text-2xl text-black text-center">次回予約のプロ</p>
                     <ul className="list-disc list-inside text-sm md:text-base text-black mt-2 text-left mx-auto">
@@ -327,7 +328,7 @@ function MainComponent() {
                     </ul>
                   </div>
                 </div>
-                <div className="w-full md:w-2/3 relative">s
+                <div className="w-full md:w-2/3 relative">
                   <div className="flex justify-center md:justify-end space-x-2 md:space-x-4 md:absolute md:bottom-0 md:right-0">
                     <img
                       src="/image/speakers/eri.png"
@@ -387,31 +388,48 @@ function MainComponent() {
       
 
       {/* Success Stories */}
-      <section id="success" className="relative py-16 bg-cover bg-center" style={{ backgroundImage: "url('/image/speakers/hasami.jpg')" }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-70"></div>
+      <section id="success" className="relative py-24 bg-cover bg-center" style={{ backgroundImage: "url('/image/speakers/hasami.jpg')" }}>
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-80"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold mb-8 text-center text-white shadow-text">
+          <h2 className="text-4xl font-bold mb-12 text-center text-white shadow-text font-serif" style={{ fontFamily: '"Playfair Display", serif' }}>
             実際に成果を出した美容師の声
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg backdrop-blur-sm">
-              <img
-                src="/image/hairdresser1.jpg"
-                alt="成功した美容師1"
-                className="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-white"
-              />
-              <h3 className="text-xl font-bold mb-2 text-white text-center">山田 花子さん</h3>
-              <p className="text-gray-200 text-center">「コンサルたった1ヶ月で次回予約率0%→100%になりました！
-コンサル開始2ヶ月で売上3倍に。スタイリストデビュー4ヶ月で次回予約率90%」</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl shadow-2xl backdrop-blur-lg transform hover:scale-105 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <img
+                  src="/image/speakers/koe2.png"
+                  alt="成功した美容師1"
+                  className="w-20 h-20 rounded-full border-4 border-amber-400 shadow-lg"
+                />
+                <div className="ml-4">
+                  <h3 className="text-2xl font-bold text-amber-400">Sさん</h3>
+                  <p className="text-gray-400"></p>
+                </div>
+              </div>
+              <p className="text-gray-200 text-lg italic leading-relaxed">
+                「コンサルたった<span className="text-amber-400 font-bold">1ヶ月</span>で次回予約率<span className="text-amber-400 font-bold">0%→100%</span>になりました！
+                コンサル開始<span className="text-amber-400 font-bold">2ヶ月</span>で<span className="text-amber-400 font-bold">売上3倍</span>に。
+                スタイリストデビュー<span className="text-amber-400 font-bold">4ヶ月</span>で次回予約率<span className="text-amber-400 font-bold">90%</span>」
+              </p>
             </div>
-            <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg backdrop-blur-sm">
-              <img
-                src="/image/hairdresser2.jpg"
-                alt="成功した美容師2"
-                className="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-white"
-              />
-              <h3 className="text-xl font-bold mb-2 text-white text-center">佐藤 太郎さん</h3>
-              <p className="text-gray-200 text-center">「求人ストが0円になり、優秀なスタッフが集まるようになりました。」</p>
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl shadow-2xl backdrop-blur-lg transform hover:scale-105 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <img
+                  src="/image/speakers/koe1.png"
+                  alt="成功した美容師2"
+                  className="w-20 h-20 rounded-full border-4 border-amber-400 shadow-lg"
+                />
+                <div className="ml-4">
+                  <h3 className="text-2xl font-bold text-amber-400">Kさん</h3>
+                  <p className="text-gray-400"></p>
+                </div>
+              </div>
+              <p className="text-gray-200 text-lg italic leading-relaxed">
+                「たった<span className="text-amber-400 font-bold">3ヶ月</span>で平均月商<span className="text-amber-400 font-bold">20万円アップ</span>！
+                セミナーで教わったことを意識した結果、<span className="text-amber-400 font-bold">9割</span>のお客様が次回予約を
+                してくださってます！！！」
+              </p>
             </div>
           </div>
         </div>
@@ -491,50 +509,25 @@ function MainComponent() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div>
-              <h3 className="text-xl font-bold mb-2">会社情報</h3>
-              <p>美容師向け無料オンラインサロン運営会社</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">リンク</h3>
-              <ul>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    プライバシーポリシー
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    利用規約
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">問い合わせ</h3>
-              <p>Email: info@example.com</p>
-              <p>電話: 03-1234-5678</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">SNS</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="text-2xl hover:text-blue-400">
-                  <i className="fab fa-facebook"></i>
-                </a>
-                <a href="#" className="text-2xl hover:text-blue-400">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#" className="text-2xl hover:text-blue-400">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </div>
+          <div className="flex flex-col items-center">
+            <h3 className="text-2xl font-bold mb-6">お問い合わせ</h3>
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              <a href="https://www.instagram.com/agezuma_/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-amber-400 transition-colors duration-300">
+                <span className="font-medium">あげ妻:</span>
+                <span className="font-medium">Instagram</span>
+                <img src="/image/speakers/insta.jpg" alt="Instagram" className="w-6 h-6 rounded-full" />
+              </a>
+              <a href="https://www.instagram.com/hitomi.eri0916/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-amber-400 transition-colors duration-300">
+                <span className="font-medium">エリ:</span>
+                <span className="font-medium">Instagram</span>
+                <img src="/image/speakers/insta.jpg" alt="Instagram" className="w-6 h-6 rounded-full" />
+              </a>
             </div>
           </div>
-          <div className="mt-16 text-center">
-            <p className="text-gray-400">
+          <div className="mt-8 text-center">
+            <p className="text-sm text-gray-400">
               &copy; {new Date().getFullYear()} Zero. All rights reserved.
             </p>
           </div>
