@@ -157,7 +157,7 @@ function MainComponent() {
                 {[
                   {
                     title: "求人コストの削減",
-                    description: "インスタグラムを活用した無料求人で、コストを大幅に削減します。",
+                    description: "インスタグラムを活用した無料求人で、コストを大幅に削減し���す。",
                     icon: "👤"
                   },
                   {
@@ -490,7 +490,7 @@ function MainComponent() {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/image/speakers/cta.jpg')" }}></div>
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 font-serif" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em' }}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 font-serif" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em' }}>
             今すぐ無料で参加する
           </h2>
           <p className="text-xl md:text-2xl mb-8 md:mb-10 font-light">限定50名様まで</p>
