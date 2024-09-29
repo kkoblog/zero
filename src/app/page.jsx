@@ -25,18 +25,18 @@ function MainComponent() {
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-60"></div>
         </div>
 
-        <div className="relative z-10 flex items-center justify-center h-full container mx-auto px-4">
+        <div className="relative z-10 flex items-start md:items-center justify-end md:justify-center h-full container mx-auto px-4 pt-20 md:pt-0">
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-center max-w-xl md:max-w-3xl mx-auto p-6 rounded-lg shadow-2xl backdrop-blur-md md:bg-black md:bg-opacity-50"
+            className="text-right md:text-center max-w-xl md:max-w-4xl mx-auto p-6 md:rounded-lg md:shadow-2xl md:backdrop-blur-md md:bg-black md:bg-opacity-50"
           >
             <motion.h1 
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
-              className="text-5xl md:text-6xl font-bold text-white mb-4 font-serif" 
+              className="text-5xl md:text-7xl font-bold text-white mb-4 font-serif" 
               style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em' }}
             >
               Zero.
@@ -45,10 +45,10 @@ function MainComponent() {
               {["高めた『技術』", "届けないと意味ないよね。", "『届ける』を学ぶ", "美容師向け無料オンラインサロン"].map((text, index) => (
                 <motion.h2 
                   key={index}
-                  initial={{ x: -50, opacity: 0 }}
+                  initial={{ x: 50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.8 + index * 0.2, duration: 0.6, ease: "easeOut" }}
-                  className="text-lg md:text-xl lg:text-2xl font-bold text-white"
+                  className="text-lg md:text-2xl lg:text-3xl font-bold text-white"
                 >
                   {text}
                 </motion.h2>
@@ -62,7 +62,7 @@ function MainComponent() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <button className="text-black px-8 py-3 rounded-full text-lg font-semibold transition duration-300 bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-600 hover:from-yellow-600 hover:via-amber-600 hover:to-amber-700 shadow-lg">
+              <button className="text-black px-8 py-3 rounded-full text-lg md:text-xl font-semibold transition duration-300 bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-600 hover:from-yellow-600 hover:via-amber-600 hover:to-amber-700 shadow-lg">
                 今すぐ参加する
               </button>
             </motion.a>
@@ -239,7 +239,7 @@ function MainComponent() {
                 3. 地域別オフライン研修＆交流会
                 </h3>
             
-                <h4 className="font-bold mb-2 text-left">目安＞</h4>
+                <h4 className="font-bold mb-2 text-left">＜目安＞</h4>
                 <div className="flex justify-start">
                   <div className="flex flex-col text-left">
                     <span>・不定期開催</span>
@@ -429,8 +429,7 @@ function MainComponent() {
               </div>
               <p className="text-gray-200 text-lg italic leading-relaxed">
                 「たった<span className="text-amber-400 font-bold">3ヶ月</span>で平均月商<span className="text-amber-400 font-bold">20万円アップ</span>！
-                セミナーで教わったことを意識した結果、<span className="text-amber-400 font-bold">9割</span>のお客様が次回予約を
-                してくださってます！！！」
+                セミナーで教わったことを意識した結果、<span className="text-amber-400 font-bold">9割</span>のお客様が次回予約をしてくださってます！！！」
               </p>
             </div>
           </div>
@@ -454,7 +453,7 @@ function MainComponent() {
               <h3 className="text-xl font-bold mb-2">参加費用について</h3>
               <p className="p-4 flex flex-col">
                 <span>美容師免許保持者（＆美容学生）：無料</span>
-                <span>その他：1500円／月額
+                <span>その他���1500円／月額
                 </span>
               </p>
             </div>
