@@ -25,18 +25,18 @@ function MainComponent() {
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-60"></div>
         </div>
 
-        <div className="relative z-10 flex items-center justify-end h-full container mx-auto px-4">
+        <div className="relative z-10 flex items-center justify-center h-full container mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-right md:text-center max-w-xl md:max-w-3xl md:mx-auto bg-black bg-opacity-50 p-6 rounded-lg shadow-2xl backdrop-blur-md"
+            className="text-center max-w-xl md:max-w-3xl mx-auto p-6 rounded-lg shadow-2xl backdrop-blur-md md:bg-black md:bg-opacity-50"
           >
             <motion.h1 
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
-              className="text-6xl font-bold text-white mb-4 font-serif" 
+              className="text-5xl md:text-6xl font-bold text-white mb-4 font-serif" 
               style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em' }}
             >
               Zero.
@@ -48,7 +48,7 @@ function MainComponent() {
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.8 + index * 0.2, duration: 0.6, ease: "easeOut" }}
-                  className="text-xl md:text-2xl lg:text-3xl font-bold text-white"
+                  className="text-lg md:text-xl lg:text-2xl font-bold text-white"
                 >
                   {text}
                 </motion.h2>
@@ -78,13 +78,14 @@ function MainComponent() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold mb-12 text-center text-gray-700"
+            className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 sm:mb-12 text-center text-gray-700"
           >
             こんな悩みはありませんか？
           </motion.h2>
+
           <div className="problem-container">
             {[
-              "求人がこない・・きてもすぐにめちゃう・・",
+              "求人がこない・・きてもすぐにやめちゃう・・",
               "せっかく新規が来ても、リピート率が低い・・",
               "新規顧客がホットペッパーに依存していて危機感",
               "単価を上げたい、店販率を上げたい",
@@ -121,7 +122,7 @@ function MainComponent() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl font-bold mb-8 text-center text-white leading-tight"
+            className="text-2xl sm:text-3xl font-bold mb-8 text-center text-white leading-tight"
           >
             マーケティングとは、
             <span className="block mt-2">お客様と知り合ってから</span>
@@ -166,7 +167,7 @@ function MainComponent() {
                   },
                   {
                     title: "SNSを操れるようになる",
-                    description: "あなたの強力な味方をあなた自身が操れるようになります",
+                    description: "あなたの強力な味方をあなた自身が操れるようになります。",
                     icon: "📱"
                   }
                 ].map((item, index) => (
@@ -205,7 +206,7 @@ function MainComponent() {
           <div className="space-y-8">
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
-                <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
                   1. メンバーだけが見ることができるインスタ鍵垢ライブによるQ＆A、講義
                 </h3>
                 <div className="mt-4 flex justify-center">
@@ -219,7 +220,7 @@ function MainComponent() {
             </div>
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
-                <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
                   2. 属性別zoom勉強会
                 </h3>
                 <div className="flex justify-start">
@@ -234,10 +235,11 @@ function MainComponent() {
 
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
-                <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
-                  3. 地域別オフライン研修＆交流会
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
+                3. 地域別オフライン研修＆交流会
                 </h3>
-                <h4 className="font-bold mb-2 text-left">＜目安＞</h4>
+            
+                <h4 className="font-bold mb-2 text-left">目安＞</h4>
                 <div className="flex justify-start">
                   <div className="flex flex-col text-left">
                     <span>・不定期開催</span>
@@ -250,21 +252,21 @@ function MainComponent() {
                 </div>
               </div>
             </div>
-
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
-                <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
-                  4. 年1回のビッグイベント
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
+                4. 年1回のビッグイベント
                 </h3>
+            
                 <p className="p-4 text-left">・サロン生による企画運営</p>
               </div>
             </div>
-
             <div className="bg-white border border-gray-300 shadow-lg overflow-hidden">
               <div className="bg-gray-200 p-6">
-                <h3 className="text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
-                  5. サロン別カスタム研修（ご要望により提案します）
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gray-700 p-4 text-white">
+                5. サロン別カスタム研修（ご要望により提案します）
                 </h3>
+            
                 <p className="p-4 text-left">・例：3時間25万円～　店トークスタッフ研修　等</p>
               </div>
             </div>
