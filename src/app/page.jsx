@@ -225,7 +225,7 @@ function MainComponent() {
                 </h3>
                 <div className="flex justify-start">
                   <div className="flex flex-col text-left">
-                    <span>月に1回の属性別zoom強会</span>
+                    <span>月に1回の属性別zoom勉強会</span>
                     <span>例）オーナー回：求人のマーケティングや社内教育のテーマ</span>
                     <span>アシスタント回：アシスタントで売上を上げる方法　など</span>
                   </div>
@@ -246,7 +246,7 @@ function MainComponent() {
                     <span>・サロン生による企画</span>
                     <span>・参加費目安: 外部50,000円、サロン生5,500円（3時間）</span>
                     <span>・最低開催人数: 20名以上から。</span>
-                    <span>・属性別zoom勉強会</span>
+                    
                     
                   </div>
                 </div>
