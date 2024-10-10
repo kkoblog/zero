@@ -69,6 +69,28 @@ function MainComponent() {
           </motion.div>
         </div>
       </section>
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 text-center"
+      >
+        <p className="text-lg sm:text-xl mb-6 text-gray-800">
+          次回新規メンバー受付は1/3です。それまでこちらに入り、アナウンスをお待ちください
+        </p>
+        <motion.a 
+          href="https://line.me/ti/g2/YN2zfW0efjtUFiJIO5OY3sAh34GWIka0OgbdCA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-block"
+        >
+          <button className="bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+            LINEオープンチャットに参加
+          </button>
+        </motion.a>
+      </motion.div>
 
       {/* Problem Section */}
       <section id="problem" className="bg-white py-16">
