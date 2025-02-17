@@ -8,8 +8,17 @@ module.exports = {
   "theme": {
     "extend": {
       "fontFamily": {
-        "sans": ["var(--font-cormorant)"],
-        "serif": ["var(--font-playfair)"]
+        "sans": [
+          '"Noto Sans JP"',
+          'sans-serif',
+          "var(--font-cormorant)"
+        ],
+        "serif": ["var(--font-playfair)"],
+        "numeric": [
+          '"Roboto"',
+          '"Noto Sans JP"',
+          'sans-serif',
+        ],
       }
     },
     "plugins": []
