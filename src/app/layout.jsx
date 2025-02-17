@@ -1,7 +1,9 @@
 export const metadata = {
   title: 'Zero. | 美容師向け無料オンラインサロン',
   description: '美容師のためのマーケティングコミュニティ。リピート率向上、求人コスト削減、SNSマーケティングなど、現場で使える実践的なスキルを学べる無料のオンラインサロンです。',
-  metadataBase: new URL('https://zero-ae.vercel.app'),
+  metadataBase: {
+    url: 'https://zero-ae.vercel.app',
+  },
   openGraph: {
     title: 'Zero. | 美容師向け無料オンラインサロン',
     description: '美容師のためのマーケティングコミュニティ。リピート率向上、求人コスト削減、SNSマーケティングなど、現場で使える実践的なスキルを学べる無料のオンラインサロンです。',
