@@ -69,28 +69,7 @@ function MainComponent() {
           </motion.div>
         </div>
       </section>
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 text-center"
-      >
-        <p className="text-lg sm:text-xl mb-6 text-gray-800">
-          次回新規メンバー受付は1/3です。それまでこちらに入り、アナウンスをお待ちください
-        </p>
-        <motion.a 
-          href="https://line.me/ti/g2/YN2zfW0efjtUFiJIO5OY3sAh34GWIka0OgbdCA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="inline-block"
-        >
-          <button className="bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
-            LINEオープンチャットに参加
-          </button>
-        </motion.a>
-      </motion.div>
+      
 
       {/* Problem Section */}
       <section id="problem" className="bg-white py-16">
@@ -482,9 +461,10 @@ function MainComponent() {
             <div>
               <h3 className="text-xl font-bold mb-2">参加条件</h3>
               <p className="p-4 flex flex-col">
+                <span>リピート、次回予約に課題を感じる方</span>
                 <span>マーケティングに課題を感じ、学びたい意欲のある方</span>
                 <span>サロンルールが守れる方</span>
-                <span>リピート、次回予約に課題を感じる方</span>
+                <span>申し込みフォームとZero.公式インスタ申請のみで簡単に参加可能</span>
               </p>
             </div>
             <div>
@@ -513,9 +493,9 @@ function MainComponent() {
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 font-serif" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em' }}>
-            今すぐ無料で参加する
+            本申し込みはこちら
           </h2>
-          <p className="text-xl md:text-2xl mb-8 md:mb-10 font-light">限定50名様まで</p>
+          
           <motion.a 
             href="https://docs.google.com/forms/d/e/1FAIpQLSeusYuPuvTWpu08R4QiFZviVClkEQRj9zPuZnsnBf_D-sQjzA/viewform" 
             className="inline-block" 
@@ -525,7 +505,7 @@ function MainComponent() {
             whileTap={{ scale: 0.95 }}
           >
             <button className="text-black px-10 py-4 rounded-full text-xl font-semibold transition duration-300 bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-600 hover:from-yellow-600 hover:via-amber-600 hover:to-amber-700 shadow-lg">
-              無料で参加する
+              今ずぐ無料で参加する
             </button>
           </motion.a>
         </div>
