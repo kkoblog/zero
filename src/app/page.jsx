@@ -461,9 +461,9 @@ function MainComponent() {
             <div>
               <h3 className="text-xl font-bold mb-2">参加条件</h3>
               <p className="p-4 flex flex-col">
-                <span>リピート、次回予約に課題を感じる方</span>
                 <span>マーケティングに課題を感じ、学びたい意欲のある方</span>
                 <span>サロンルールが守れる方</span>
+                <span>リピート、次回予約に課題を感じる方</span>
                 <span>申し込みフォームとZero.公式インスタ申請のみで簡単に参加可能</span>
               </p>
             </div>
