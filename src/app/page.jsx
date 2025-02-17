@@ -2,17 +2,6 @@
 import React from "react";
 import { motion, useInView } from 'framer-motion';
 import '../styles/problem.css';
-import { Metadata } from 'next';
-
-export const metadata = {
-  title: 'Zero. | 美容師向け無料オンラインサロン',
-  description: '美容師のためのマーケティングコミュニティ。リピート率向上、求人コスト削減、SNSマーケティングなど、現場で使える実践的なスキルを学べる無料のオンラインサロンです。',
-  openGraph: {
-    title: 'Zero. | 美容師向け無料オンラインサロン',
-    description: '美容師のためのマーケティングコミュニティ。リピート率向上、求人コスト削減、SNSマーケティングなど、現場で使える実践的なスキルを学べる無料のオンラインサロンです。',
-    images: ['/image/speakers/sero.png'],
-  },
-};
 
 function MainComponent() {
   const ref = React.useRef(null);
