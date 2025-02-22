@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, useInView } from 'framer-motion';
 import '../styles/problem.css';
+import Image from 'next/image';
 
 function MainComponent() {
   const ref = React.useRef(null);
@@ -272,6 +273,23 @@ function MainComponent() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 入会セクション */}
+      <section id="join" className="bg-gradient-to-r from-gray-900 to-black">
+        <div className="w-full">
+            {/* 入会の流れ */}
+            <div className="bg-black w-full">
+              <div className="max-w-[600px] mx-auto">
+                <img
+                  src="/image/speakers/nyukai.jpg"
+                  alt="入会の流れの図"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="h-28 bg-black"></div>
+            </div>
         </div>
       </section>
 
